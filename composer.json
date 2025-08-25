@@ -1,6 +1,6 @@
 {
-    "name": "phpoffice/phpspreadsheet",
-    "description": "PHPSpreadsheet - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+    "name": "totara/phpspreadsheet",
+    "description": "Totara fork of PHPSpreadsheet - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
     "keywords": [
         "PHP",
         "OpenXML",
@@ -12,15 +12,10 @@
         "spreadsheet"
     ],
     "config": {
-        "platform": {
-            "php" : "8.0.99"
-        },
-        "sort-packages": true,
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
-    "homepage": "https://github.com/PHPOffice/PhpSpreadsheet",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -117,5 +112,8 @@
             "PhpOffice\\PhpSpreadsheetTests\\": "tests/PhpSpreadsheetTests",
             "PhpOffice\\PhpSpreadsheetInfra\\": "infra"
         }
+    },
+    "replace": {
+        "phpoffice/phpspreadsheet": "self.version"
     }
 }
